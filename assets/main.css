@@ -1,0 +1,107 @@
+body{
+  background-color: rgb(255, 217, 67);
+}
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+#menu {
+  width:100%;
+  height: 100px;
+  background-color: #000000;
+}
+#menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 100px;
+}
+
+#menu ul li a {
+  text-decoration: none; 
+  font-size: 18px;
+  font-family: arial;
+  color:#807e7e
+  padding: 0 20px;
+  display: inline-block;
+  height: 100px
+  vertical-align: middle;
+}
+header {
+  background-color: #ffffff;
+  color: rgb(255, 255, 255)000;
+  text-align: center;
+  padding: 0px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px; 
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+}
+ul li a {
+  font: size 36px;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+}
+ul, ol {
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+}
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #767676;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+#audio-player {
+  margin-top: 20px;
+}
+.button {
+  cursor: pointer;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
