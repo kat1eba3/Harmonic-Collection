@@ -1,6 +1,24 @@
-body{
-  background-color: rgb(255, 217, 67);
+/* Reset and common styles */
+body, h1, p, ul, li {
+  margin: 0;
+  padding: 0;
 }
+
+/* Apply a background color and font family */
+body {
+  background-color: rgb(205, 224, 255);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Navigation Menu */
+#menu {
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+}
+
 #menu ul {
   margin: 0;
   padding: 0;
@@ -8,11 +26,6 @@ body{
   text-align: center;
 }
 
-#menu {
-  width:100%;
-  height: 100px;
-  background-color: #000000;
-}
 #menu ul li {
   display: inline-block;
   margin-right: 20px;
@@ -21,59 +34,47 @@ body{
 }
 
 #menu ul li a {
-  text-decoration: none; 
+  text-decoration: none;
   font-size: 18px;
   font-family: arial;
-  color:#807e7e
+  color: #807e7e;
   padding: 0 20px;
   display: inline-block;
-  height: 100px
+  height: 100px;
   vertical-align: middle;
 }
-header {
-  background-color: #ffffff;
-  color: rgb(255, 255, 255)000;
-  text-align: center;
-  padding: 0px 0;
-}
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 20px; 
-}
-
-nav a {
-  text-decoration: none;
-  color: #ffffff;
+/* Heading Styles */
+h1 {
+  font-size: 36px;
   font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+h3 {
   font-size: 24px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 10px;
 }
-ul li a {
-  font: size 36px;
-}
+
+/* Common Text Styles */
 p {
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  margin: 10px 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-}
-p {
-  font-family: 'Roboto', sans-serif;
-}
-ul, ol {
-  font-family: 'Roboto', sans-serif;
-}
-button {
-  font-family: 'Roboto', sans-serif;
-}
-a {
-  font-family: 'Roboto', sans-serif;
-}
+
+/* Song List Styles */
 .song-list {
   display: flex;
   flex-direction: column;
@@ -94,14 +95,72 @@ button:hover {
   background-color: #ffffff;
 }
 
+/* Audio Player Styles */
 #audio-player {
   margin-top: 20px;
 }
-.button {
-  cursor: pointer;
-}
+
+/* Image Styles */
 img {
   max-width: 100%;
   height: auto;
   border: 2px solid #ccc;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Bus Animation Styles */
+.bus-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bus-slide {
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+.bus-slide img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 5s linear infinite;
+}
+
+.animated-gif {
+  width: 10px;
+  height: 10px;
+}
+
+/* Entry Container Styles */
+.entry-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Individual Entry Styles */
+.entry {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 
+
+  body {
+    font-family: serif;
+    padding: 20px;
+  }
+  
+  div { background-color: rgb(255, 248, 176); }
