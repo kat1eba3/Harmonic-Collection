@@ -103,7 +103,7 @@ button:hover {
 /* Image Styles */
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   border: 2px solid #ccc;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -120,8 +120,8 @@ img {
 }
 
 .bus-slide img {
-  height: 100px;
-  margin-right: 20px;
+  height: 20px;
+  margin-right: 20x;
 }
 
 @keyframes marquee {
@@ -138,10 +138,6 @@ img {
   animation: marquee 5s linear infinite;
 }
 
-.animated-gif {
-  width: 10px;
-  height: 10px;
-}
 
 /* Entry Container Styles */
 .entry-container {
@@ -157,10 +153,10 @@ img {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 
+}
 
   body {
     font-family: serif;
-    padding: 20px;
+    padding: 10px;
   }
   
-  div { background-color: rgb(255, 248, 176); }
