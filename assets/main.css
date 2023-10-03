@@ -6,8 +6,8 @@ body, h1, p, ul, li {
 
 /* Apply a background color and font family */
 body {
-  background-color: rgb(205, 224, 255);
-  font-family: Arial, sans-serif;
+  background-color: rgb(244, 203, 220);
+  font-family:Georgia, 'Times New Roman', Times, serif;
   margin: 0;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@ body {
 #menu {
   width: 100%;
   height: 100px;
-  background-color: #000000;
+  background-color: #cccaca;
 }
 
 #menu ul {
@@ -35,10 +35,11 @@ body {
 
 #menu ul li a {
   text-decoration: none;
-  font-size: 18px;
-  font-family: arial;
-  color: #807e7e;
-  padding: 0 20px;
+  font-size: 14px;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #757575;
+  padding: 0 5px;
   display: inline-block;
   height: 100px;
   vertical-align: middle;
@@ -48,14 +49,14 @@ body {
 h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #333;
+  color: #686868;
   margin-bottom: 10px;
 }
 
 h2 {
   font-size: 30px;
   font-weight: bold;
-  color: #555;
+  color: #969494;
   margin-bottom: 10px;
 }
 
@@ -68,9 +69,9 @@ h3 {
 
 /* Common Text Styles */
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family:;
   font-size: 18px;
-  color: #000000;
+  color: #949191;
   margin: 10px 0;
 }
 
@@ -159,4 +160,143 @@ img {
     font-family: serif;
     padding: 10px;
   }
-  
+  body
+ 
+
+  .entry-four {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    color: #fff;
+
+}
+.music-container {
+    font-family: sans-serif;
+    width: 300px;
+    height: 450px;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(#6c6cff, #000000);
+}
+.music-header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #555;
+    background-image: linear-gradient(#000000, #6c6cff);
+    display: flex; /* Center horizontally and vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.music-header .fa-angle-left {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.music-header .fa-search {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.music-header .title {
+    height: 30px;
+    text-align: center;
+    padding-left: 10px;
+}
+.music-playlist
+{
+  width: 100%;
+  height: 450px;
+}
+.music-menu
+{
+  width: 275px;
+  height: 16px;
+  margin: 15px 30px auto;
+  border-radius: 10px;
+  border: 1px solid #fff
+}
+ul
+{
+  font-size: 10px;
+  padding: initial;
+}
+ul li
+{
+  list-style-type: none;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+ul li a
+{
+  color: #fff;
+  padding: 5px 15px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.menu ul li: :last-child
+{
+  border-right: none;
+}
+.music-box {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(#6c6cff, #6b3636);
+}
+.music-box: :-webskit-scrollbar
+{
+  width: 0px;
+  background: transparent;
+}
+.music-box .fa-elipisis-v
+{
+  margin-right: 10px;
+  margin-top: 22px;
+  font-weight: normal;
+  color: #e1e1e1;
+  cursor: pointer;
+}
+.music-info
+{ 
+  width: 100%;
+  height: 50px;
+  display: flex;
+
+}
+.music-playlist .playlist-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Background color for playlist items */
+}
+
+.playlist-item-image {
+  width: 40px; /* Adjust the size of the image as needed */
+  height: 40px; /* Adjust the size of the image as needed */
+  margin-right: 10px;
+}
+
+.playlist-item-title {
+  flex-grow: 0;
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #fff; /* Text color for playlist item title */
+}
+
+.music-title {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #fff; /* Text color for the title */
+  text-align: center;
+  margin-top: 40px; /* Add margin to the top to lower the text */
+  position: relative; /* Add position property */
+  z-index: 1; /* Set a higher z-index to bring it in front */
+}
