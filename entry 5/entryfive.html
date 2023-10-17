@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../assets/main.css">>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">>
+    <link rel="stylesheet" type="text/css" href="../assets/entry5.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     
-
-</div>
     <style>
+        /* Your CSS styles here */
+
         body {
-            font-family: Roberto, sans-serif;
+            font-family: verdana, sans-serif;
             background-color: hsl(0, 0%, 100%);
             text-align: center;
             margin: 0;
@@ -127,41 +126,75 @@
             text-decoration: none;
             font-size: 18px;
             font-family: a;
+        }
 
-       {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+        header {
+            background-color: #007acc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007acc;
+            color: white;
+        }
+        /* Menu styles */
+#menu {
+  width: 100%;
+  height: 100px;
+  background-color: #cccaca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header {
-    background-color: #007acc;
-    color: white;
-    text-align: center;
-    padding: 20px;
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
-main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#menu ul li {
+  margin: 0;
+  padding: 0 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #007acc;
-    color: white;
-}     
-       
+#menu ul li:last-child {
+  border-right: none;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #757575;
+}
+
+<main class="commute-section">
+    </main>
     </style>
-    
 </head>
 <body>
-    
     <!-- Navigation Menu -->
     <nav id="menu">
         <ul>
@@ -176,26 +209,24 @@ footer {
             <li><a href="#">Entry 9</a></li>
             <li><a href="#">Entry 10</a></li>
             <li><a href="#">Entry 11</a></li>
-           
         </ul>
-<main>
-    <h2>My Daily Commute</h2>
-    <p>Every day, I take the 7:18 bus from Tenafly, NJ to Port Authority. The bus ride takes approximately 50 minutes to an hour. On the bus I ususally listen to music but in the mornings, I take this time to catch up on sleep!!</p>
-    
-    <img class="commute-image" src="166bus.png" alt="Bus Image">
-    <img class="commute-image" src="port.jpg" alt="Port Authority">
-    
-    <p>Once I reach Port Authority, I walk through 42nd Time Sq station to catch the N,Q,R train downtown. The subway ride is four stops long and honestly goes by really fast. The only bad thing about the subway is the walk through the 42nds Time Sq station, it feels like so much uphill walking! </p>
-    
-    <img class="commute-image" src="42.jpg" alt="Subway Image">
-    
-    <p>Once I get to 14st Union Sq I walk five minutes to the UC. In the mornings when I have time to spare I like grabbing myself a cup of coffee to prepare myself for another day of classes. This is what my daily commute looks like, and I've learned to make the most of it!</p>
-    <img class="commute-image" src="unionsq.jpg" alt="Union Sq">
-    <img class="commute-image" src="starbucks.jpg" alt="starbucks">
-    <img class="commute-image" src="joe.jpg" alt="Joe Coffee">
-    
+    </nav>
 
-</main>
-<main class="entry-page-5" style="margin-top: 0px">
+    <main>
+        <h2>My Daily Commute</h2>
+        <p>Every day, I take the 7:18 bus from Tenafly, NJ to Port Authority. The bus ride takes approximately 50 minutes to an hour. On the bus, I usually listen to music, but in the mornings, I take this time to catch up on sleep!!</p>
 
-</main>
+        <img class="commute-image" src="166bus.png" alt="Bus Image">
+        <img class="commute-image" src="port.jpg" alt="Port Authority">
+
+        <p>Once I reach Port Authority, I walk through 42nd Time Sq station to catch the N,Q,R train downtown. The subway ride is four stops long and honestly goes by really fast. The only bad thing about the subway is the walk through the 42nd Time Sq station, it feels like so much uphill walking!</p>
+
+        <img class="commute-image" src="42.jpg" alt="Subway Image">
+
+        <p>Once I get to 14th Union Sq I walk five minutes to the UC. In the mornings when I have time to spare, I like grabbing myself a cup of coffee to prepare myself for another day of classes. This is what my daily commute looks like, and I've learned to make the most of it!</p>
+        <img class="commute-image" src="unionsq.jpg" alt="Union Sq">
+        <img class="commute-image" src="starbucks.jpg" alt="Starbucks">
+        <img class="commute-image" src="joe.jpg" alt="Joe Coffee">
+    </main>
+
+    <main class="entry-page-5" style="margin-top: 0px">
