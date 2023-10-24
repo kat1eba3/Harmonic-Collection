@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+}
+
+.geeks {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(231, 133, 192);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace; /* Replace 'Your Desired Font' with the actual font name */
+    font-size: 36px; /* You can adjust the font size as needed */
+    color: #727071; /* You can change the color as needed */
+    margin-top: 20px; /* You can adjust the top margin as needed */
+}
