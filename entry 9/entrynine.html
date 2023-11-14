@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../assets/main2.css">
+    <link rel="stylesheet" href="../assets/entrynine.css">
+    <style>
+        /* Additional styling to limit overflow and hide scrollbar */
+        body {
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        #draggable-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Style for the tooltip */
+        .tooltip {
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            display: none;
+        }
+
+        /* Styling for the hovered areas */
+        #person1:hover::after,
+        #person2:hover::after,
+        #person3:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Style expandable section */
+        .expandable-section {
+            margin-top: 20px;
+        }
+
+        /* Hide the checkbox */
+        .expandable-section input {
+            display: none;
+        }
+
+        /* Style the label to resemble a button */
+        .expandable-section label {
+            display: inline-block;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Hide the content by default */
+        .expandable-section .content {
+            display: none;
+        }
+
+        /* Show the content when the checkbox is checked */
+        .expandable-section input:checked + label + .content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Entry 1</a></li>
+            <li><a href="entrytwo.html">Entry 2</a></li>
+            <li><a href="entrythree.html">Entry 3</a></li>
+            <li><a href="entryfour.html">Entry 4</a></li>
+            <li><a href="entryfive.html">Entry 5</a></li>
+            <li><a href="entrysix.html">Entry 6</a></li>
+            <li><a href="entryseven.html">Entry 7</a></li>
+            <li><a href="entryeight.html">Entry 8</a></li>
+            <li><a href="entrynine.html">Entry 9</a></li>
+            <li><a href="#">Entry 10</a></li>
+            <li><a href="#">Entry 11</a></li>
+        </ul>
+    </nav>
+
+    <div id="draggable-container">
+        <div class="parallax-layer" data-speed="5">
+            <img src="entry9.jpg" alt="Parallax Background" usemap="#peopleMap">
+        </div>
+        <div class="parallax-layer" data-speed="3">
+            <!-- Add more layers as needed -->
+        </div>
+
+        <!-- Define the image map -->
+        <map name="peopleMap">
+            <area id="person1" shape="rect" coords="225,375,308,466" alt="Person 1" title="Person 1">
+            <area id="person2" shape="rect" coords="722,406,115,97" alt="Person 2" title="Person 2">
+            <area id="person3" shape="rect" coords="1010,375,95,89" alt="Person 3" title="Person 3">
+            <!-- Add more areas as needed -->
+        </map>
+
+        <!-- Tooltip container -->
+        <div class="tooltip" id="tooltip"></div>
+
+        <!-- Expandable section -->
+        <div class="expandable-section">
+            <input type="checkbox" id="expandSection">
+            <label for="expandSection">Expand Section</label>
+            <div class="content">
+                <p>This is the expanded content.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/subway.js"></script>
+
+    <script>
+        // Add event listeners for hover effect
+        const areas = document.querySelectorAll('area');
+
+        areas.forEach(area => {
+            area.addEventListener('mouseover', function () {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.innerHTML = this.getAttribute('title');
+                tooltip.style.display = 'block';
+            });
+
+            area.addEventListener('mouseout', function () {
+                const tooltip = document.getElementById('tooltip');
+                tooltip.style.display = 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

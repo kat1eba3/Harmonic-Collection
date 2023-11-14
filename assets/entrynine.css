@@ -1,0 +1,48 @@
+/* Apply styles to your subway illustration container */
+.subway-illustration {
+    /* Add your styles here */
+}
+
+/* Style tooltips */
+area[title]::after {
+    content: attr(title);
+    position: absolute;
+    /* Add tooltip styles here */
+}
+
+/* Style expandable section */
+.expandable-section {
+    margin-top: 20px;
+}
+
+/* Hide the checkbox */
+.expandable-section input {
+    display: none;
+}
+
+/* Style the label to resemble a button */
+.expandable-section label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Hide the content by default */
+.expandable-section .content {
+    display: none;
+}
+
+/* Show the content when the checkbox is checked */
+.expandable-section input:checked + label + .content {
+    display: block;
+}
+
+/* Add more CSS styles as needed */
+
+.parallax-layer img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+}
